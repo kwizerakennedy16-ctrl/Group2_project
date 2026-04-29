@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Ndejje Campus Connect</string>
+    <string name="app_tagline">Your Campus, Connected.</string>
+
+    <!-- Navigation Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_map">Campus Map</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_resources">Resources</string>
+
+    <!-- Login / Onboarding Screen -->
+    <string name="label_welcome">Welcome to</string>
+    <string name="label_campus_connect">Ndejje Campus Connect</string>
+    <string name="label_email">Student / Staff Email</string>
+    <string name="label_password">Password</string>
+    <string name="button_login">Sign In</string>
+    <string name="button_login_loading">Signing in…</string>
+    <string name="label_no_account">Don\'t have an account?</string>
+    <string name="button_register">Register</string>
+    <string name="error_empty_email">Email cannot be empty</string>
+    <string name="error_invalid_email">Enter a valid university email</string>
+    <string name="error_empty_password">Password cannot be empty</string>
+    <string name="error_short_password">Password must be at least 6 characters</string>
+    <string name="error_login_failed">Login failed. Please check your credentials.</string>
+    <string name="label_email_placeholder">e.g. bcs2201@ndejjeuniversity.ac.ug</string>
+
+    <!-- News Feed Screen -->
+    <string name="screen_title_home">Campus News Feed</string>
+    <string name="label_announcements">Announcements</string>
+    <string name="label_no_announcements">No announcements yet.</string>
+    <string name="label_posted_by">Posted by</string>
+    <string name="label_category_academic">Academic</string>
+    <string name="label_category_events">Events</string>
+    <string name="label_category_emergency">Emergency</string>
+    <string name="label_category_general">General</string>
+    <string name="button_refresh">Refresh</string>
+    <string name="label_loading">Loading…</string>
+    <string name="cd_announcement_icon">Announcement category icon</string>
+
+    <!-- Campus Map Screen -->
+    <string name="screen_title_map">Campus Map</string>
+    <string name="label_search_location">Search locations…</string>
+    <string name="label_facilities">Campus Facilities</string>
+    <string name="label_no_results">No locations found.</string>
+    <string name="label_building">Building</string>
+    <string name="label_floor">Floor</string>
+    <string name="cd_location_icon">Location pin icon</string>
+    <string name="label_filter_all">All</string>
+    <string name="label_filter_academic">Academic</string>
+    <string name="label_filter_admin">Admin</string>
+    <string name="label_filter_social">Social</string>
+    <string name="label_filter_health">Health</string>
+
+    <!-- Academic Dashboard Screen -->
+    <string name="screen_title_dashboard">Academic Dashboard</string>
+    <string name="label_timetable">My Timetable</string>
+    <string name="label_exams">Exam Schedule</string>
+    <string name="label_deadlines">Upcoming Deadlines</string>
+    <string name="label_no_timetable">No timetable entries found.</string>
+    <string name="label_no_exams">No upcoming exams.</string>
+    <string name="label_no_deadlines">No deadlines at this time.</string>
+    <string name="label_day_monday">Monday</string>
+    <string name="label_day_tuesday">Tuesday</string>
+    <string name="label_day_wednesday">Wednesday</string>
+    <string name="label_day_thursday">Thursday</string>
+    <string name="label_day_friday">Friday</string>
+    <string name="label_venue">Venue</string>
+    <string name="label_lecturer">Lecturer</string>
+    <string name="label_course_code">Course Code</string>
+
+    <!-- Resources Screen -->
+    <string name="screen_title_resources">Resources &amp; Directory</string>
+    <string name="label_search_resources">Search contacts or guides…</string>
+    <string name="label_contacts">University Contacts</string>
+    <string name="label_guides">Student Guides</string>
+    <string name="label_no_resources">No resources found.</string>
+    <string name="label_call">Call</string>
+    <string name="label_email_action">Email</string>
+    <string name="label_download">Download</string>
+    <string name="cd_contact_icon">Contact icon</string>
+    <string name="cd_guide_icon">PDF guide icon</string>
+
+    <!-- Common -->
+    <string name="button_back">Back</string>
+    <string name="label_error">Something went wrong. Please try again.</string>
+    <string name="cd_bottom_nav_icon">Bottom navigation icon for %1$s</string>
+</resources>
