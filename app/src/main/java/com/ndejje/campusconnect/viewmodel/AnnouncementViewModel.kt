@@ -16,7 +16,18 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-
+/**
+ * ViewModel responsible for managing announcements and read status tracking.
+ *
+ * Features:
+ * - Fetches announcements from repository using reactive Flow patterns
+ * - Supports category filtering (Academic, Events, Emergency, General)
+ * - Tracks which announcements the current user has read
+ * - Allows staff/admin to post new announcements
+ * - Supports deleting announcements (admin only)
+ *
+ * Uses combine() and flatMapLatest() to react to filter changes automatically.
+ */
 class AnnouncementViewModel(
     private val repository: AnnouncementRepository
 ) : ViewModel() {
