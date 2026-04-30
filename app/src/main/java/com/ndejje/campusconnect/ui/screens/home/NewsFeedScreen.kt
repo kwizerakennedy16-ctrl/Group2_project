@@ -156,7 +156,7 @@ fun NewsFeedScreen(
                     Text(
                         text = if (isFilteringUnread) "No unread announcements" else stringResource(R.string.label_no_announcements),
                         style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
+                        color = MaterialTheme.colorScheme.onBackground
                     )
                 }
             } else {
@@ -290,12 +290,12 @@ fun AnnouncementDetailDialog(
                     Text(
                         text = "By: ${announcement.postedBy}",
                         style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                     Text(
                         text = formatTimestamp(announcement.timestamp),
                         style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                 }
 
@@ -304,7 +304,8 @@ fun AnnouncementDetailDialog(
                 Text(
                     text = announcement.body,
                     style = MaterialTheme.typography.bodyLarge,
-                    lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                    lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2,
+                    color = MaterialTheme.colorScheme.onSurface
                 )
 
                 Spacer(modifier = Modifier.height(24.dp))
@@ -358,7 +359,7 @@ private fun AnnouncementCard(
                 Icon(
                     imageVector = categoryIcon,
                     contentDescription = null,
-                    tint = if (!announcement.isRead) categoryColor else categoryColor.copy(alpha = 0.5f),
+                    tint = if (!announcement.isRead) categoryColor else categoryColor,
                     modifier = Modifier.size(dimensionResource(R.dimen.icon_size_lg))
                 )
                 if (!announcement.isRead) {
@@ -387,7 +388,7 @@ private fun AnnouncementCard(
                         color = if (!announcement.isRead) 
                             MaterialTheme.colorScheme.onSurface 
                         else 
-                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                            MaterialTheme.colorScheme.onSurface,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
                         modifier = Modifier.weight(1f)
@@ -401,7 +402,7 @@ private fun AnnouncementCard(
                             Icon(
                                 imageVector = Icons.Default.Delete,
                                 contentDescription = "Delete",
-                                tint = MaterialTheme.colorScheme.error.copy(alpha = 0.6f),
+                                tint = MaterialTheme.colorScheme.error,
                                 modifier = Modifier.size(18.dp)
                             )
                         }
@@ -414,9 +415,9 @@ private fun AnnouncementCard(
                     text = announcement.body,
                     style = MaterialTheme.typography.bodyMedium,
                     color = if (!announcement.isRead)
-                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f)
+                        MaterialTheme.colorScheme.onSurface
                     else
-                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                        MaterialTheme.colorScheme.onSurface,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
                 )
@@ -430,12 +431,12 @@ private fun AnnouncementCard(
                     Text(
                         text = announcement.postedBy,
                         style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = if (!announcement.isRead) 0.6f else 0.4f)
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                     Text(
                         text = formatTimestamp(announcement.timestamp),
                         style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = if (!announcement.isRead) 0.6f else 0.4f)
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                 }
             }

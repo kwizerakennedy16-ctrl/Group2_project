@@ -143,7 +143,7 @@ fun CampusMapScreen() {
             Text(
                 text = "${filteredLocations.size} ${stringResource(R.string.label_facilities)}",
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
+                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.9f)
             )
 
             Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xs)))
@@ -157,7 +157,7 @@ fun CampusMapScreen() {
                     Text(
                         text = stringResource(R.string.label_no_results),
                         style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f)
+                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.9f)
                     )
                 }
             } else {
@@ -209,7 +209,7 @@ private fun LocationCard(location: CampusLocation) {
                 Text(
                     text = location.description,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.9f)
                 )
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xs)))
                 Text(
