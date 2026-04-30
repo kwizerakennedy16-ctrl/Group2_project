@@ -15,10 +15,12 @@ private val lightColorScheme = lightColorScheme(
     onSecondary = OnSurfaceDark,
     secondaryContainer = NdejjeGoldContainer,
     onSecondaryContainer = OnSurfaceDark,
-    background = Cream,
+    background = SkyBlue,
     onBackground = OnSurfaceDark,
-    surface = Cream,
+    surface = SkyBlue,
     onSurface = OnSurfaceDark,
+    surfaceVariant = SkyBlueVariant,
+    onSurfaceVariant = OnSurfaceDark,
     error = ErrorRed,
     onError = White
 )
@@ -30,12 +32,14 @@ private val darkColorScheme = darkColorScheme(
     onPrimaryContainer = White,
     secondary = NdejjeGold80,
     onSecondary = OnSurfaceDark,
-    background = OnSurfaceDark,
-    onBackground = White,
-    surface = OnSurfaceDark,
-    onSurface = White,
-    error = ErrorRedLight, // Changed to a lighter red for better visibility on dark backgrounds
-    onError = OnSurfaceDark
+    background = SkyBlue,
+    onBackground = OnSurfaceDark,
+    surface = SkyBlue,
+    onSurface = OnSurfaceDark,
+    surfaceVariant = SkyBlueVariant,
+    onSurfaceVariant = OnSurfaceDark,
+    error = ErrorRed,
+    onError = White
 )
 
 @Composable
