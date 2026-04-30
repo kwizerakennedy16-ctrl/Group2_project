@@ -58,7 +58,7 @@ private val tabTitles = listOf("Lectures", "Exams", "Deadlines")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AcademicDashboardScreen(
-    lectures: List<TimetableEntry>,
+    teacher: List<TimetableEntry>,
     exams: List<TimetableEntry>,
     deadlines: List<TimetableEntry>,
     onLogout: () -> Unit // Added logout callback
