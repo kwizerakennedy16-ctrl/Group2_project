@@ -1,5 +1,6 @@
 package com.ndejje.campusconnect.ui.screens.onboarding
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -14,8 +15,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusDirection
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -23,6 +26,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import com.ndejje.campusconnect.R
 import com.ndejje.campusconnect.viewmodel.AuthUiState
 
@@ -73,6 +77,17 @@ fun RegisterScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_md)))
+
+            // ── Logo ───────────────────────────────────────────────────
+            Image(
+                painter = painterResource(id = R.drawable.ndu_logo),
+                contentDescription = "Ndejje University Logo",
+                modifier = Modifier
+                    .size(64.dp), // Slightly smaller for registration to save space
+                contentScale = ContentScale.Fit
+            )
+
+            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_sm)))
             
             Text(
                 text = "Create Account",
@@ -88,7 +103,7 @@ fun RegisterScreen(
                 textAlign = TextAlign.Center
             )
 
-            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xl)))
+            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_lg)))
 
             // Full Name
             OutlinedTextField(
@@ -171,7 +186,7 @@ fun RegisterScreen(
                 )
             }
 
-            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xl)))
+            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_lg)))
 
             Button(
                 onClick = { onRegisterClicked(name, studentId, email, password) },
@@ -203,6 +218,8 @@ fun RegisterScreen(
                     Text(text = "Sign In")
                 }
             }
+            
+            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xl)))
         }
     }
 }
