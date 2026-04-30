@@ -132,7 +132,7 @@ fun AcademicDashboardScreen(
                     Text(
                         text = emptyMessage,
                         style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f)
+                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.9f)
                     )
                 }
             } else {
@@ -192,7 +192,7 @@ private fun TimetableCard(entry: TimetableEntry) {
                 Text(
                     text = entry.endTime,
                     style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f)
                 )
             }
 
@@ -217,14 +217,14 @@ private fun TimetableCard(entry: TimetableEntry) {
                     Icon(
                         imageVector = Icons.Filled.Place,
                         contentDescription = null,
-                        tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                        tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f),
                         modifier = Modifier.size(dimensionResource(R.dimen.icon_size_sm))
                     )
                     Spacer(modifier = Modifier.width(width = dimensionResource(R.dimen.spacing_xs)))
                     Text(
                         text = entry.venue,
                         style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.9f)
                     )
                 }
 
@@ -234,14 +234,14 @@ private fun TimetableCard(entry: TimetableEntry) {
                     Icon(
                         imageVector = Icons.Filled.AccessTime,
                         contentDescription = null,
-                        tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                        tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f),
                         modifier = Modifier.size(dimensionResource(R.dimen.icon_size_sm))
                     )
                     Spacer(modifier = Modifier.width(width = dimensionResource(R.dimen.spacing_xs)))
                     Text(
                         text = entry.dayOfWeek,
                         style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.9f)
                     )
                 }
 
@@ -250,7 +250,7 @@ private fun TimetableCard(entry: TimetableEntry) {
                 Text(
                     text = "${stringResource(R.string.label_lecturer)}: ${entry.lecturer}",
                     style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f)
                 )
             }
         }
