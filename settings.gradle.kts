@@ -1,4 +1,5 @@
-pluginManagement {
+
+// Project structure: Single module app with standard Android setuppluginManagement {
     repositories {
         google {
             content {
