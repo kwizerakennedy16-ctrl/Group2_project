@@ -1,6 +1,7 @@
 package com.ndejje.campusconnect.ui.screens.home
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -18,7 +19,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -108,12 +111,26 @@ fun NewsFeedScreen(
             )
         }
     ) { paddingValues ->
-        Column(
+        Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)
         ) {
-            LazyRow(
+            Image(
+                painter = painterResource(id = R.drawable.connectlogo),
+                contentDescription = null,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(dimensionResource(R.dimen.spacing_xl)),
+                alpha = 0.08f,
+                contentScale = ContentScale.Fit,
+                alignment = Alignment.Center
+            )
+
+            Column(
+                modifier = Modifier.fillMaxSize()
+            ) {
+                LazyRow(
                 contentPadding = PaddingValues(horizontal = dimensionResource(R.dimen.spacing_md)),
                 horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing_sm)),
                 modifier = Modifier.padding(vertical = dimensionResource(R.dimen.spacing_sm))
@@ -164,6 +181,7 @@ fun NewsFeedScreen(
                 }
             }
         }
+    }
 
         // --- Dialogs ---
         selectedAnnouncementForDetail?.let { announcement ->

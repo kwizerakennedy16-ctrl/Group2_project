@@ -11,7 +11,7 @@
     <string name="nav_resources">Resources</string>
 
     <!-- Login / Onboarding Screen -->
-    <string name="label_welcome">Welcome to</string>
+    <string name="label_welcome">Welcome </string>
     <string name="label_campus_connect">Ndejje Campus Connect</string>
     <string name="label_email">Student / Staff Email</string>
     <string name="label_password">Password</string>
