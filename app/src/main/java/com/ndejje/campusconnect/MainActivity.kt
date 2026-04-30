@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import com.ndejje.campusconnect.ui.theme.CampusConnectTheme
 
 /**
+ * * @author Ndejje University Group 2 Project Team
+ *  * @version 1.0.0
  * Application entry point.
  *
  * Per coding standards this file is intentionally minimal:
@@ -14,6 +16,7 @@ import com.ndejje.campusconnect.ui.theme.CampusConnectTheme
  * All navigation, state management, and business logic reside in their
  * appropriate ViewModel, Repository, or Composable layers.
  */
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

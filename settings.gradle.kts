@@ -1,3 +1,4 @@
+// Project structure: Single module app with standard Android setup
 pluginManagement {
     repositories {
         google {
