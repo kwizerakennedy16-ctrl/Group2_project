@@ -156,7 +156,7 @@ fun ResourcesScreen() {
                     Text(
                         text = stringResource(R.string.label_no_resources),
                         style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.9f)
+                        color = MaterialTheme.colorScheme.onBackground
                     )
                 }
             } else {
@@ -258,7 +258,7 @@ private fun ContactCard(
             Text(
                 text = resource.subtitle,
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.9f)
+                color = MaterialTheme.colorScheme.onSurface
             )
             Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_sm)))
             Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing_sm))) {
@@ -323,7 +323,7 @@ private fun GuideCard(
                 Text(
                     text = resource.subtitle,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.9f)
+                    color = MaterialTheme.colorScheme.onSurface
                 )
             }
             resource.pdfUrl?.let { url ->

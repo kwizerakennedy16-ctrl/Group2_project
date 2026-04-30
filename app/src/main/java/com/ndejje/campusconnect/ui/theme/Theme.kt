@@ -32,14 +32,14 @@ private val darkColorScheme = darkColorScheme(
     onPrimaryContainer = White,
     secondary = NdejjeGold80,
     onSecondary = OnSurfaceDark,
-    background = SkyBlue,
-    onBackground = OnSurfaceDark,
-    surface = SkyBlue,
-    onSurface = OnSurfaceDark,
-    surfaceVariant = SkyBlueVariant,
-    onSurfaceVariant = OnSurfaceDark,
-    error = ErrorRed,
-    onError = White
+    background = Black,
+    onBackground = White,
+    surface = Black,
+    onSurface = White,
+    surfaceVariant = DarkGreyVariant,
+    onSurfaceVariant = White,
+    error = ErrorRedLight,
+    onError = OnSurfaceDark
 )
 
 @Composable
