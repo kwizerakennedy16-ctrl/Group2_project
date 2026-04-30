@@ -46,6 +46,8 @@ fun NewsFeedScreen(
     selectedCategory: AnnouncementCategory?,
     unreadCount: Int,
     userRole: UserRole,
+    isDarkTheme: Boolean,
+    onThemeToggle: () -> Unit,
     onCategorySelected: (AnnouncementCategory?) -> Unit,
     onAnnouncementClicked: (Announcement) -> Unit,
     onPostAnnouncement: (String, String, AnnouncementCategory) -> Unit,
@@ -69,6 +71,14 @@ fun NewsFeedScreen(
                     )
                 },
                 actions = {
+                    IconButton(onClick = onThemeToggle) {
+                        Icon(
+                            imageVector = if (isDarkTheme) Icons.Default.LightMode else Icons.Default.DarkMode,
+                            contentDescription = "Toggle Theme",
+                            tint = MaterialTheme.colorScheme.onPrimary
+                        )
+                    }
+
                     IconButton(onClick = onToggleUnreadFilter) {
                         BadgedBox(
                             badge = { 
