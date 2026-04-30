@@ -14,7 +14,7 @@
     <string name="label_welcome">Welcome to</string>
     <string name="label_campus_connect">Ndejje Campus Connect</string>
     <string name="label_email">Student / Staff Email</string>
-    <string name="label_password">Passcode</string>
+    <string name="label_password">Password</string>
     <string name="button_login">Sign In</string>
     <string name="button_login_loading">Signing in…</string>
     <string name="label_no_account">Don\'t have an account?</string>
