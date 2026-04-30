@@ -13,7 +13,7 @@
     <!-- Login / Onboarding Screen -->
     <string name="label_welcome">Welcome </string>
     <string name="label_campus_connect">Ndejje Campus Connect</string>
-    <string name="label_email">Student / Staff Email</string>
+    <string name="label_email">Student or Staff Email</string>
     <string name="label_password">Password</string>
     <string name="button_login">Sign In</string>
     <string name="button_login_loading">Signing in…</string>
