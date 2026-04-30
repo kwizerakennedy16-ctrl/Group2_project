@@ -17,7 +17,7 @@
     <string name="label_password">Password</string>
     <string name="button_login">Sign In</string>
     <string name="button_login_loading">Signing in…</string>
-    <string name="label_no_account">Don't have an account?</string>
+    <string name="label_no_account">Do not have an account?</string>
     <string name="button_register">Register</string>
     <string name="error_empty_email">Email cannot be empty</string>
     <string name="error_invalid_email">Enter a valid university email</string>
