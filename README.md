@@ -10,24 +10,25 @@
 </p>
 
 <div align="center">
-  <a href="https://youtu.be/wBouHcMpIlc/" target="_blank">
-    <img src="https://img.shields.io/badge/🎥_WATCH_PRESENTATION-Click_here-red?style=for-the-badge&logo=youtube" alt="YouTube Presentation">
+   📱 Ndejje Campus Connect
+
+<p align="center">
+  <a href="https://youtu.be/wBouHcMpIlc" target="_blank">
+    <img src="https://img.shields.io/badge/▶️_WATCH_PRESENTATION-CLICK_HERE-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=cc0000&color=aa0000" width="400">
   </a>
+</p>
 </div>
 
 ---
 
 ## 👥 Team Roster
-
 | Role | Name | Student ID |
 |------|------|-------------|
 | **Git & QA Manager** | Kwizera Kennedy |1009027817 |
 | **Documentation Lead** | Ritah Namazzi |  1008205906 |
-| **UI/UX Specialist** | NakatO Hope Keziah| 1008102178|
+| **UI/UX Specialist** | Nakato Hope Keziah| 1008102178|
 | **Lead Developer** |Mulindwa Willis Daniel  |1010115526|
 | **QA & Testing Engineer** | Namanya Tomas | 1008186620  |
-
-*(Replace student IDs with actual university numbers)*
 
 ---
 
@@ -82,8 +83,7 @@
 ## 📌 Important Links
 
 - **GitHub Repository:** [https://github.com/kwizerakennedy16-ctrl/Group2_project](https://github.com/kwizerakennedy16-ctrl/Group2_project)
-- **YouTube Presentation (15 min):** [https://youtu.be/wBouHcMpIlc](https://youtu.be/wBouHcMpIlc) *(replace with actual link – make sure video is unlisted/ public)*
-
+- **YouTube Presentation:** [https://youtu.be/wBouHcMpIlc](https://youtu.be/wBouHcMpIlc) 
 ---
 
 
