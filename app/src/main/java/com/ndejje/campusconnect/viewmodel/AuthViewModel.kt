@@ -36,6 +36,14 @@ data class AuthUiState(
 
 /**
  * ViewModel responsible for handling authentication logic and state management.
+ *
+ * This ViewModel manages:
+ * - User login with email/password validation
+ * - User registration with role assignment (Student/Staff/Admin)
+ * - Session management and logout
+ * - UI state for Login and Register screens
+ *
+ * @param userDao Data access object for User database operations
  */
 class AuthViewModel(private val userDao: UserDao) : ViewModel() {
 

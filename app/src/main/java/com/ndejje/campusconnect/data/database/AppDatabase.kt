@@ -45,6 +45,24 @@ class Converters {
 }
 
 // ── Database ─────────────────────────────────────────────────────────────────
+/**
+ * Room Database for Campus Connect app.
+ *
+ * Manages three main entities:
+ * - Announcements: Campus news and updates
+ * - TimetableEntry: Lectures, exams, and deadlines
+ * - User: Authentication and role management
+ *
+ * Features:
+ * - Auto-migration with fallback to destructive migration
+ * - Pre-seeded demo data on first launch
+ * - Default admin (admin@ndejje.ac.ug / admin123)
+ * - Default staff account (staff@ndejje.ac.ug / staff123)
+ *
+ * @see AnnouncementDao for announcement operations
+ * @see TimetableDao for schedule operations
+ * @see UserDao for authentication operations
+ */
 @Database(
     entities = [
         Announcement::class, 

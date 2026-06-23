@@ -43,6 +43,27 @@ import com.ndejje.campusconnect.viewmodel.TimetableViewModel
 
 /**
  * Root Composable for the Ndejje Campus Connect application.
+ *
+ * This is the entry point of the UI layer. It sets up:
+ *
+ * **Navigation:**
+ * - NavController for screen navigation
+ * - Bottom navigation bar with 4 tabs (Home, Map, Dashboard, Resources)
+ * - Conditional bottom bar (hidden on login/register screens)
+ *
+ * **Dependency Injection:**
+ * - Database instance (Room)
+ * - Repositories (Announcement, Timetable)
+ * - ViewModels with custom factories
+ *
+ * **State Management:**
+ * - Authentication state from AuthViewModel
+ * - Announcements with filtering from AnnouncementViewModel
+ * - Timetable data from TimetableViewModel
+ *
+ * **Screen Routes:**
+ * - Login -> Register -> Home (after successful auth)
+ * - Home, Map, Dashboard, Resources (main app screens)
  */
 @Composable
 fun CampusConnectApp() {
